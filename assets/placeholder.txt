@@ -1,0 +1,4 @@
+Add your images here:
+- header.jpg (recommended 1600x600)
+- gallery1.jpg
+- gallery2.jpg

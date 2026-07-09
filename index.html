@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DK Wedding Invitation</title>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <h1>D &amp; K</h1>
+      <p class="date">October 10, 2026 · City, Country</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="details">
+      <h2>You're invited</h2>
+      <p>We'd love for you to celebrate our wedding. Ceremony at 3:00pm, reception to follow.</p>
+      <ul>
+        <li>Venue: Example Venue Name</li>
+        <li>Address: 123 Wedding Lane, City</li>
+        <li>Dress code: Semi-formal</li>
+      </ul>
+    </section>
+
+    <section class="rsvp">
+      <h2>RSVP</h2>
+      <!-- Replace action with your Formspree or Netlify Forms endpoint -->
+      <form action="https://formspree.io/f/your-id" method="POST">
+        <label>
+          Name
+          <input name="name" type="text" required />
+        </label>
+        <label>
+          Email
+          <input name="email" type="email" required />
+        </label>
+        <label>
+          Will you attend?
+          <select name="attendance" required>
+            <option value="">Select</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+        </label>
+        <label>
+          Message
+          <textarea name="message"></textarea>
+        </label>
+        <button type="submit">Send RSVP</button>
+      </form>
+      <p class="note">This form is a placeholder — configure Formspree or Netlify Forms to receive responses.</p>
+    </section>
+
+    <section class="gallery">
+      <h2>Gallery</h2>
+      <p>Replace the placeholder images in /assets with your photos (header.jpg, gallery1.jpg...).</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 D &amp; K</p>
+  </footer>
+</body>
+</html>
