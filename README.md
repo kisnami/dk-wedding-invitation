@@ -1,42 +1,24 @@
-# DK Wedding Invitation
+# DK Wedding — Krishnakumar & Dharshini
 
-A simple static wedding invitation site for the DK wedding. This repository contains a lightweight HTML/CSS template you can customize, plus a basic RSVP form that can be hooked to Formspree or Netlify Forms (no backend required).
+This update enhances the invitation UI to match a modern theme (inspired by the site you shared) and adds:
 
-What I added
+- Updated hero with couple names and venue/date/time
+- Theme picker (Rose, Teal, Gold, Navy)
+- Background selector with a few built-in options and a file upload to set a custom background image
+- Toggleable floating hearts animation (CSS + JS)
+- Responsive layout and improved styles
 
-- `index.html` — main static invitation page
-- `styles/style.css` — basic styles
-- `README.md` — this file with usage instructions
-- `LICENSE` — MIT license
-- `.gitignore` — common ignores
-- `assets/placeholder.txt` — add your images here (header.jpg, gallery images)
+How to use
 
-How to preview
+- Open index.html to preview locally.
+- Use the control panel at the top to change theme, choose a background, upload your own image, and enable animated hearts.
+- To persist user choices we store them in localStorage; this affects browser viewers only.
 
-1. Clone the repo locally:
+RSVP
 
-   git clone https://github.com/kisnami/dk-wedding-invitation.git
-   cd dk-wedding-invitation
+- The RSVP form still uses a placeholder Formspree action. Replace the action attribute in index.html with your Formspree form endpoint or use Netlify Forms by adding data-netlify="true" to the form before deploying to Netlify.
 
-2. Open `index.html` in your browser.
+Deploy
 
-Hosting suggestions
+- GitHub Pages, Netlify, or Vercel are all fine for static deployment. If you deploy on Netlify you can use Netlify Forms to capture submissions without adding a backend.
 
-- GitHub Pages: In the repo settings, enable Pages and serve from the main branch root (or `gh-pages` branch if you prefer). Your site will be available at `https://kisnami.github.io/dk-wedding-invitation/`.
-- Netlify / Vercel: Connect the repo and deploy — these platforms detect static sites automatically.
-
-RSVP form
-
-The included RSVP form in `index.html` uses a placeholder Formspree action. To make it functional:
-
-- Sign up at https://formspree.io/ or use Netlify Forms.
-- Replace the `action` attribute on the form in `index.html` with your Formspree form endpoint (e.g. `https://formspree.io/f/your-id`).
-
-Customization
-
-- Replace images in `assets/` (suggested `header.jpg`, `gallery1.jpg`, `gallery2.jpg`).
-- Edit event details in `index.html`.
-
-License
-
-This project is licensed under the MIT License — see `LICENSE`.
