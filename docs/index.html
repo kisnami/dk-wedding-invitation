@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Krishnakumar & Dharshini — Wedding Invitation</title>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body data-theme="rose">
+  <header class="hero" id="hero">
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <h1>Krishnakumar &amp; Dharshini</h1>
+        <p class="lead">Sengalirayar Marriage Hall · August 29 · 6:00 PM – 10:00 PM</p>
+        <a class="cta" href="#rsvp">RSVP</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="controls">
+    <div class="control-block">
+      <label>Theme</label>
+      <div class="themes">
+        <button class="theme-btn" data-theme="rose">Rose</button>
+        <button class="theme-btn" data-theme="teal">Teal</button>
+        <button class="theme-btn" data-theme="gold">Gold</button>
+        <button class="theme-btn" data-theme="navy">Navy</button>
+      </div>
+    </div>
+
+    <div class="control-block">
+      <label>Background</label>
+      <div class="bg-list">
+        <button class="bg-btn" data-src="assets/header.svg">Default</button>
+        <button class="bg-btn" data-src="assets/bg1.svg">Blush</button>
+        <button class="bg-btn" data-src="assets/bg2.svg">Soft</button>
+        <button class="bg-btn" data-src="assets/bg3.svg">Vignette</button>
+      </div>
+      <div class="upload">
+        <label class="upload-label">Or upload image
+          <input id="bgUpload" type="file" accept="image/*" />
+        </label>
+      </div>
+    </div>
+
+    <div class="control-block">
+      <label>Animation</label>
+      <div class="animation-controls">
+        <label class="switch"><input id="heartsToggle" type="checkbox" /> <span>Floating hearts</span></label>
+      </div>
+    </div>
+  </div>
+
+  <main class="container">
+    <section class="about">
+      <h2>You're invited</h2>
+      <p>We would be honored to celebrate our wedding with you. Ceremony at 6:00 PM followed by reception and dinner.</p>
+      <ul class="info-list">
+        <li><strong>Venue:</strong> Sengalirayar Marriage Hall</li>
+        <li><strong>Date:</strong> August 29</li>
+        <li><strong>Time:</strong> 6:00 PM – 10:00 PM</li>
+        <li><strong>Dress code:</strong> Semi-formal</li>
+      </ul>
+    </section>
+
+    <section id="rsvp" class="rsvp">
+      <h2>RSVP</h2>
+      <p class="small">Please let us know if you can join — the form will send responses via Formspree or Netlify Forms when configured.</p>
+      <form class="rsvp-form" action="https://formspree.io/f/your-id" method="POST">
+        <div class="row">
+          <label>
+            Name
+            <input name="name" type="text" required placeholder="Your full name" />
+          </label>
+          <label>
+            Email
+            <input name="email" type="email" required placeholder="you@example.com" />
+          </label>
+        </div>
+
+        <div class="row">
+          <label>
+            Will you attend?
+            <select name="attendance" required>
+              <option value="">Select</option>
+              <option value="yes">Yes — I will attend</option>
+              <option value="no">Sorry — I can’t make it</option>
+            </select>
+          </label>
+
+          <label>
+            Guests
+            <input name="guests" type="number" min="0" max="10" placeholder="Number of additional guests" />
+          </label>
+        </div>
+
+        <label>
+          Message
+          <textarea name="message" rows="4" placeholder="Any notes (dietary restrictions, etc.)"></textarea>
+        </label>
+
+        <button type="submit" class="btn">Send RSVP</button>
+      </form>
+    </section>
+
+    <section class="gallery">
+      <h2>Gallery</h2>
+      <p class="small">Replace the placeholder SVGs in /assets with your photos for a better look.</p>
+      <div class="grid">
+        <img src="assets/gallery1.svg" alt="Gallery image 1" />
+        <img src="assets/gallery2.svg" alt="Gallery image 2" />
+        <img src="assets/gallery3.svg" alt="Gallery image 3" />
+      </div>
+    </section>
+
+    <section class="travel">
+      <h2>Travel &amp; Stay</h2>
+      <p>We recommend staying at nearby hotels — more details will be added soon.</p>
+    </section>
+  </main>
+
+  <div id="hearts" aria-hidden="true"></div>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Krishnakumar &amp; Dharshini</p>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>

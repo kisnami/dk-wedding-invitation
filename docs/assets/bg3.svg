@@ -1,0 +1,7 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1600' height='600' viewBox='0 0 1600 600' preserveAspectRatio='xMidYMid slice'>
+  <rect width='1600' height='600' fill='#fbf7ff'/>
+  <g transform='translate(60,60)'>
+    <rect width='1400' height='480' rx='32' fill='#f0ecf8'/>
+  </g>
+  <text x='10%' y='85%' font-family='Georgia, serif' font-size='34' fill='#53405c'>Vignette style — replace with photo</text>
+</svg>

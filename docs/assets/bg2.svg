@@ -1,0 +1,7 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1600' height='600' viewBox='0 0 1600 600' preserveAspectRatio='xMidYMid slice'>
+  <rect width='1600' height='600' fill='#fffaf0'/>
+  <g transform='translate(60,60)'>
+    <circle cx='120' cy='120' r='100' fill='#f6e3e3'/>
+  </g>
+  <text x='10%' y='85%' font-family='Georgia, serif' font-size='34' fill='#6b4038'>Soft textured backdrop</text>
+</svg>
